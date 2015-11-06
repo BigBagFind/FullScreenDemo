@@ -15,6 +15,10 @@
 		81D6568D1BECF1C80020841C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81D6568B1BECF1C80020841C /* LaunchScreen.storyboard */; };
 		81D656981BECF1C80020841C /* FullScreenDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D656971BECF1C80020841C /* FullScreenDemoTests.m */; };
 		81D656A31BECF1C80020841C /* FullScreenDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D656A21BECF1C80020841C /* FullScreenDemoUITests.m */; };
+		81D656B21BECF2580020841C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D656B11BECF2580020841C /* FirstViewController.m */; };
+		81D656B51BECF2630020841C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D656B41BECF2630020841C /* SecondViewController.m */; };
+		81D656B81BECF2950020841C /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D656B71BECF2950020841C /* NavViewController.m */; };
+		81D656BB1BECFB140020841C /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D656BA1BECFB140020841C /* UINavigationController+FDFullscreenPopGesture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		81D6569E1BECF1C80020841C /* FullScreenDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FullScreenDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D656A21BECF1C80020841C /* FullScreenDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FullScreenDemoUITests.m; sourceTree = "<group>"; };
 		81D656A41BECF1C80020841C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81D656B01BECF2580020841C /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		81D656B11BECF2580020841C /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		81D656B31BECF2630020841C /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		81D656B41BECF2630020841C /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		81D656B61BECF2950020841C /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
+		81D656B71BECF2950020841C /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
+		81D656B91BECFB140020841C /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		81D656BA1BECFB140020841C /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +117,14 @@
 				81D656811BECF1C80020841C /* AppDelegate.m */,
 				81D656831BECF1C80020841C /* ViewController.h */,
 				81D656841BECF1C80020841C /* ViewController.m */,
+				81D656B01BECF2580020841C /* FirstViewController.h */,
+				81D656B11BECF2580020841C /* FirstViewController.m */,
+				81D656B31BECF2630020841C /* SecondViewController.h */,
+				81D656B41BECF2630020841C /* SecondViewController.m */,
+				81D656B61BECF2950020841C /* NavViewController.h */,
+				81D656B71BECF2950020841C /* NavViewController.m */,
+				81D656B91BECFB140020841C /* UINavigationController+FDFullscreenPopGesture.h */,
+				81D656BA1BECFB140020841C /* UINavigationController+FDFullscreenPopGesture.m */,
 				81D656861BECF1C80020841C /* Main.storyboard */,
 				81D656891BECF1C80020841C /* Assets.xcassets */,
 				81D6568B1BECF1C80020841C /* LaunchScreen.storyboard */,
@@ -273,9 +293,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81D656B51BECF2630020841C /* SecondViewController.m in Sources */,
 				81D656851BECF1C80020841C /* ViewController.m in Sources */,
 				81D656821BECF1C80020841C /* AppDelegate.m in Sources */,
 				81D6567F1BECF1C70020841C /* main.m in Sources */,
+				81D656B81BECF2950020841C /* NavViewController.m in Sources */,
+				81D656BB1BECFB140020841C /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				81D656B21BECF2580020841C /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +525,7 @@
 				81D656A91BECF1C80020841C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81D656AA1BECF1C80020841C /* Build configuration list for PBXNativeTarget "FullScreenDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +534,7 @@
 				81D656AC1BECF1C80020841C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81D656AD1BECF1C80020841C /* Build configuration list for PBXNativeTarget "FullScreenDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +543,7 @@
 				81D656AF1BECF1C80020841C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

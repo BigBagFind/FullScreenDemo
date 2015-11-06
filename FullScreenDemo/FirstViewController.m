@@ -7,6 +7,8 @@
 //
 
 #import "FirstViewController.h"
+#import "SecondViewController.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
 
 @interface FirstViewController ()
 
@@ -16,22 +18,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.title = @"第一个";
+    self.view.backgroundColor = [UIColor purpleColor];
+    //self.navigationController.navigationBar.translucent = NO;
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+    [self.view addSubview:button];
+    button.frame = CGRectMake(100, 150, 200, 80);
+    [button setTitle:@"Push" forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont systemFontOfSize:25];
+    [button addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
+   // self.navigationController.fd_prefersNavigationBarHidden = YES;
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+//- (void)viewWillAppear:(BOOL)animated {
+//    [super viewWillAppear:animated];
+//    [self.navigationController setNavigationBarHidden:YES  animated:animated];
+//}
+
+- (BOOL)fd_prefersNavigationBarHidden {
+    return YES;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)click{
+    
+    SecondViewController *secondVc = [[SecondViewController alloc]init];
+    [self.navigationController pushViewController:secondVc animated:YES];
 }
-*/
+
 
 @end
